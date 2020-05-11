@@ -28,7 +28,7 @@
         <div id="gallery">
             @foreach($photos as $one)
             <figure class="photo">
-                <a href="{{$one->image}}"><img src="{{$one->image}}"/></a>
+                <a href="{{$one->image}}" data-lightbox="roadtrip"><img src="{{$one->image}}"></a>
                 <figcaption>
                     {{$one->description}}
                     <div class="delete-btn"><a href="/gallery/delete/{{$one->id}}">X</a></div>
